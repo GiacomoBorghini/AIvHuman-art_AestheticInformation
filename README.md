@@ -20,6 +20,7 @@ M_NCD_Calculation.m
 M_J_Calculation.m
 natsort.m
 natsortfiles.m
+
 The last two scripts has been taken from the File Exchange section of Matlab website (link: https://it.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort).
 
 Mutual-Information-based Partitioning

@@ -2,7 +2,7 @@ clc
 clear
 close all;
 
-dataset_raw = readtable("HuID_wikiartDataset_InfoAest_DEF.csv");
+dataset_raw = readtable("InfAes_metricsDataset.csv");
 sel_metrics = [1,2,3,4,5,6];
 
 size_array = dataset_raw.Size; 
@@ -69,4 +69,5 @@ disp(strcat("Precision: ",string(P)));
 disp(strcat("Recall: ",string(R)));
 disp(strcat("F-score: ",string(F1)));
 disp(strcat("Accuracy: ",string((T_p+T_n)/size(dataset_raw,1)*100),"%"));
+
 

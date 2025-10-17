@@ -4,7 +4,7 @@ close all
 
 sorted_metric = [5,3];%,1,6,2,4];
 sorted_metric_str = ["M_{NCD}","M_K","M_{P,L}","M_H","M_J","M_{P,RGB}"];
-dataset = readtable("HuID_wikiartDataset_InfoAest_DEF_v2.csv");
+dataset = readtable("InfAes_metricsDataset.csv");
 
 fid = fopen("ACCvCOMPL_results.csv",'a');
 NumTestSets = 100;
@@ -46,5 +46,6 @@ end
 fprintf(fid,'\n');
 
 save("COMPL.mat","sorted_metric_array");
+
 
 fclose(fid);
